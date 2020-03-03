@@ -1,0 +1,258 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap");
+
+.data-panel {
+  height: auto !important;
+  margin-top: 0;
+}
+
+.data-panel__inside {
+  display: none;
+}
+
+.data-panel .background {
+  position: relative;
+}
+
+.primary-nav__after,
+.primary-nav__before {
+  display: none;
+}
+
+.data-panel + footer {
+  margin-top: 0 !important;
+}
+
+.jumbotron,
+.navcontainer,
+.sg-header,
+.sg-progress-bar {
+  display: none !important;
+}
+
+.sg-question-title label {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.sg-page-title {
+  color: #ffffff;
+  text-align: center !important;
+}
+
+.sg-question.sg-type-textbox {
+  margin: 0 !important;
+}
+
+.sg-survey .sg-button {
+  min-width: 150px !important;
+  background: red !important;
+  border-radius: 5px !important;
+  font-family: SourceSansPro-Black, Arial, Helvetica, sans-serif;
+}
+
+.sg-question {
+  border: none !important;
+}
+
+.sg-question-options {
+  max-width: 400px !important;
+  margin: 0 auto !important;
+}
+
+body .sg-question input[type="text"] {
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: #000000;
+}
+
+.icon-travelconnect-logo:before {
+  content: "\e920" !important;
+}
+
+.postjumbotron {
+  background: url("https://www2.arccorp.com/globalassets/home2/2019/postsite/homepage-bg.jpg")
+    no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  padding: 80px 0;
+
+  &:after {
+    content: "";
+    background: #0fbaa8;
+    background: linear-gradient(#0fbaa8, #000000);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 2;
+  }
+
+  .container {
+    position: relative;
+    z-index: 999;
+  }
+
+  .tcSubtitle {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .tcMaintitle {
+    font-size: 4rem;
+  }
+
+  .tcDate {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 10rem;
+  }
+
+  .tcFormLabel {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+.jumbotron--image .block-header {
+  font-family: "Source Sans Pro", arial, sans-serif !important;
+  font-weight: 300;
+}
+
+.ctaLink {
+  font-family: SourceSansPro-Bold, arial, sans-serif !important;
+  letter-spacing: normal !important;
+  font-size: 1rem;
+}
+
+.sg-survey .sg-mobile-optimized .sg-question input[type="number"],
+.sg-survey .sg-mobile-optimized .sg-question input[type="email"],
+.sg-survey .sg-mobile-optimized .sg-question input[type="text"],
+.sg-survey .sg-mobile-optimized .sg-question input[type="password"],
+.sg-survey .sg-mobile-optimized .sg-question input[type="date"],
+.sg-survey .sg-mobile-optimized .sg-question textarea,
+.sg-survey
+  .sg-mobile-optimized
+  .sg-survey
+  .sg-mobile-optimized
+  .sg-table
+  input[type="text"] {
+  color: #000000 !important;
+}
+
+.icon-travelconnect-logo:before {
+  content: "\e920" !important;
+}
+
+.lazyload {
+  margin-bottom: 15px;
+}
+
+.contained-panel .block-header {
+  margin-bottom: 30px;
+  font-size: 2.25rem;
+  letter-spacing: normal !important;
+  text-transform: capitalize;
+  font-family: SourceSansPro-Bold, arial, sans-serif !important;
+}
+
+.contained-panel p {
+  line-height: 1.5;
+}
+
+.tcPhotoTimeline {
+  margin-top: 30px;
+}
+
+.postjumbotron {
+  z-index: 4;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.row {
+  max-width: 100% !important;
+}
+
+@media (max-width: 787px) {
+  .sg-survey .sg-mobile-optimized .sg-footer {
+    box-shadow: none !important;
+  }
+  .postjumbotron .tcMaintitle {
+    font-size: 2.5rem;
+  }
+
+  .sg-survey .sg-body.sg-int-virtual-page .sg-button-bar .sg-submit-button {
+    margin: 0 auto !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    font-family: SourceSansPro-Black, arial, sans-serif !important;
+  }
+  .sg-survey .sg-mobile-optimized .sg-button-bar {
+    margin: 0 !important;
+  }
+
+  .sg-survey .sg-body.sg-int-virtual-page .sg-footer,
+  .sg-survey .sg-mobile-optimized .sg-footer {
+    position: relative !important;
+    background: none !important;
+  }
+}
+
+@media (max-width: 537px) {
+  .postjumbotron .tcDate {
+    font-size: 4rem;
+  }
+  .postjumbotron .tcMaintitle {
+    font-size: 1.5rem;
+  }
+
+  .align-items-center {
+    align-items: normal !important;
+  }
+
+  .tcContainer .tcSocial .hashtag {
+    font-size: 1.8rem !important;
+  }
+
+  .row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .postjumbotron {
+    padding: 25px 0 !important;
+  }
+
+  .sg-survey .sg-button {
+    margin: 0 !important;
+  }
+
+  .sg-survey .sg-mobile-optimized .sg-content {
+    margin-bottom: 0 !important;
+  }
+
+  .sg-survey .sg-mobile-optimized .sg-question-options {
+    padding: 0 !important;
+  }
+}
