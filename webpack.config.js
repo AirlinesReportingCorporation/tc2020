@@ -10,7 +10,7 @@ const extractSass = new MiniCssExtractPlugin({
 module.exports = [{
   mode: 'development',
   entry: {
-    tc2019: './src/index.jsx'
+    tc2020: './src/index.jsx'
   },
   output: {
     filename: '[name].min.js',

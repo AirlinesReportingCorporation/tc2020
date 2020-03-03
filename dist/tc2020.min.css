@@ -1,50 +1,51 @@
-@import "fonts";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap);
+@font-face {
+  font-family: "ProximaNova-Black";
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Black.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Light.otf") format("opentype"); }
 
 .data-panel {
   height: auto !important;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .data-panel__inside {
-  display: none;
-}
+  display: none; }
 
 .data-panel .background {
-  position: relative;
-}
+  position: relative; }
 
 .primary-nav__after,
 .primary-nav__before {
-  display: none;
-}
+  display: none; }
 
 .data-panel + footer {
-  margin-top: 0 !important;
-}
+  margin-top: 0 !important; }
 
 .jumbotron,
 .navcontainer,
 .sg-header,
 .sg-progress-bar {
-  display: none !important;
-}
+  display: none !important; }
 
 .tc2020-header {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(187, 187, 187, 0.8029586834733894) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
+  background: white;
+  background: linear-gradient(180deg, white 0%, rgba(187, 187, 187, 0.802959) 50%, black 100%); }
 
 .tc2020-header-image {
   max-width: 700px;
-  margin: 40px auto;
-}
+  margin: 40px auto; }
 
 .tc2020-header-date {
   color: #ffffff;
@@ -53,81 +54,64 @@
   font-size: 42px;
   text-transform: uppercase;
   letter-spacing: 10px;
-  margin-bottom: 4rem;
-}
+  margin-bottom: 4rem; }
 
 .tc2020-recap {
   color: #ffffff;
   background: #000000;
-  padding: 4rem 0;
-}
+  padding: 4rem 0; }
 
 .tc-2020-recap-title {
   max-width: 600px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .tc2020-recap-section {
   max-width: 750px;
   margin: 0 auto;
-  padding: 2.5rem 0;
-}
+  padding: 2.5rem 0; }
 
 .tc2020-recap-image-top {
   position: relative;
   height: 450px;
-  z-index:5;
-}
+  z-index: 5; }
 
 .tc2020-author {
-  z-index: 5;
-}
+  z-index: 5; }
 
 .tc2020-amy-webb {
-  max-width: 80%;
-}
+  max-width: 80%; }
 
 .tc2020-dave-harvey {
-  max-width: 80%;
-  .tc2020-recap-img-title {
-    max-width: 400px;
-  }
-}
+  max-width: 80%; }
+  .tc2020-dave-harvey .tc2020-recap-img-title {
+    max-width: 400px; }
 
 .tc2020-recap-img-title {
   position: absolute;
   max-width: 500px;
   top: 25%;
-  left: 50%;
-}
+  left: 50%; }
 
-.tc2020-recap-body{
+.tc2020-recap-body {
   position: relative;
-  z-index: 6;
-}
-
-
+  z-index: 6; }
 
 .tc2020-amy-webb {
-  background: url('https://arctravelconnect.com/globalassets/Home2/2020/homepage/Amy-Webb-Photo.png') center left no-repeat;
-  background-size: contain;
-}
+  background: url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/Amy-Webb-Photo.png") center left no-repeat;
+  background-size: contain; }
 
 .sg-question-title label {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 .sg-page-title {
   color: #ffffff;
-  text-align: center !important;
-}
+  text-align: center !important; }
 
 .sg-question.sg-type-textbox {
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
 .sg-survey .sg-button {
   min-width: 200px !important;
@@ -136,25 +120,21 @@
   border: 2px solid #ffffff;
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
-  font-size: 0.9rem !important;
-}
+  font-size: 0.9rem !important; }
 
 .sg-question {
-  border: none !important;
-}
+  border: none !important; }
 
 .sg-question-options {
   max-width: 400px !important;
-  margin: 0 auto !important;
-}
+  margin: 0 auto !important; }
 
 .sg-survey .sg-add-another-button,
 .sg-survey .sg-browse-btn,
 .sg-survey .sg-button,
 .sg-survey .sg-configurator-btn,
 .sg-survey .sg-file-field input[type="button"] {
-  margin: 0;
-}
+  margin: 0; }
 
 body .sg-question input[type="text"] {
   font-size: 1.2rem;
@@ -163,69 +143,47 @@ body .sg-question input[type="text"] {
   border: none;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 0;
-  padding: 1.5rem;
-
-  &::placeholder {
+  padding: 1.5rem; }
+  body .sg-question input[type="text"]::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ffffff;
-    opacity: 1; /* Firefox */
-  }
-
-  &:-ms-input-placeholder {
+    opacity: 1;
+    /* Firefox */ }
+  body .sg-question input[type="text"]:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #ffffff;
-  }
-
-  &::-ms-input-placeholder {
+    color: #ffffff; }
+  body .sg-question input[type="text"]::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #ffffff;
-  }
-}
+    color: #ffffff; }
 
 .icon-travelconnect-logo:before {
-  content: "\e920" !important;
-}
+  content: "\e920" !important; }
 
 .postjumbotron {
   text-align: center;
   position: relative;
-  color: #ffffff;
-
-  .container {
+  color: #ffffff; }
+  .postjumbotron .container {
     position: relative;
-    z-index: 999;
-  }
-
-  .tcSubtitle {
+    z-index: 999; }
+  .postjumbotron .tcSubtitle {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 3rem;
-    margin-bottom: 10px;
-  }
-
-  .tcMaintitle {
-    font-size: 4rem;
-  }
-
-  .tcDate {
+    margin-bottom: 10px; }
+  .postjumbotron .tcMaintitle {
+    font-size: 4rem; }
+  .postjumbotron .tcDate {
     font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
-  }
-
-  .tcPrice {
-    display: inline-block;
-  }
-
-  .tcFormLabel {
+    font-size: 1.5rem; }
+  .postjumbotron .tcFormLabel {
     display: inline-block;
     font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-  }
-}
+    border-bottom: 1px solid #ffffff; }
 
 body h1,
 body h2,
@@ -235,14 +193,12 @@ body h5,
 body h6,
 .jumbotron--image .block-header {
   font-family: "Source Sans Pro", arial, sans-serif !important;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 .ctaLink {
   font-family: SourceSansPro-Bold, arial, sans-serif !important;
   letter-spacing: normal !important;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .sg-survey .sg-mobile-optimized .sg-question input[type="number"],
 .sg-survey .sg-mobile-optimized .sg-question input[type="email"],
@@ -251,112 +207,78 @@ body h6,
 .sg-survey .sg-mobile-optimized .sg-question input[type="date"],
 .sg-survey .sg-mobile-optimized .sg-question textarea,
 .sg-survey
-  .sg-mobile-optimized
-  .sg-survey
-  .sg-mobile-optimized
-  .sg-table
-  input[type="text"] {
-  color: #000000 !important;
-}
+.sg-mobile-optimized
+.sg-survey
+.sg-mobile-optimized
+.sg-table
+input[type="text"] {
+  color: #000000 !important; }
 
 .icon-travelconnect-logo:before {
-  content: "\e920" !important;
-}
+  content: "\e920" !important; }
 
 .lazyload {
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .contained-panel .block-header {
   margin-bottom: 30px;
   font-size: 2.25rem;
   letter-spacing: normal !important;
   text-transform: capitalize;
-  font-family: SourceSansPro-Bold, arial, sans-serif !important;
-}
+  font-family: SourceSansPro-Bold, arial, sans-serif !important; }
 
 .contained-panel p {
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 .tcPhotoTimeline {
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .postjumbotron {
-  z-index: 4;
-}
+  z-index: 4; }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1440px;
-  }
-}
+    max-width: 1440px; } }
 
 .row {
-  max-width: 100% !important;
-}
+  max-width: 100% !important; }
 
 @media (max-width: 787px) {
   .sg-survey .sg-mobile-optimized .sg-footer {
-    box-shadow: none !important;
-  }
+    box-shadow: none !important; }
   .postjumbotron .tcMaintitle {
-    font-size: 2.5rem;
-  }
-
+    font-size: 2.5rem; }
   .sg-survey .sg-body.sg-int-virtual-page .sg-button-bar .sg-submit-button {
     margin: 0 auto !important;
     float: none !important;
     width: 100% !important;
     max-width: 300px !important;
-    font-family: SourceSansPro-Black, arial, sans-serif !important;
-  }
+    font-family: SourceSansPro-Black, arial, sans-serif !important; }
   .sg-survey .sg-mobile-optimized .sg-button-bar {
-    margin: 0 !important;
-  }
-
+    margin: 0 !important; }
   .sg-survey .sg-body.sg-int-virtual-page .sg-footer,
   .sg-survey .sg-mobile-optimized .sg-footer {
     position: relative !important;
-    background: none !important;
-  }
-}
+    background: none !important; } }
 
 @media (max-width: 537px) {
   .postjumbotron .tcDate {
-    font-size: 4rem;
-  }
+    font-size: 4rem; }
   .postjumbotron .tcMaintitle {
-    font-size: 1.5rem;
-  }
-
+    font-size: 1.5rem; }
   .align-items-center {
-    align-items: normal !important;
-  }
-
+    align-items: normal !important; }
   .tcContainer .tcSocial .hashtag {
-    font-size: 1.8rem !important;
-  }
-
+    font-size: 1.8rem !important; }
   .row {
     margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
+    margin-right: auto !important; }
   .postjumbotron {
-    padding: 25px 0 !important;
-  }
-
+    padding: 25px 0 !important; }
   .sg-survey .sg-button {
-    margin: 0 !important;
-  }
-
+    margin: 0 !important; }
   .sg-survey .sg-mobile-optimized .sg-content {
-    margin-bottom: 0 !important;
-  }
-
+    margin-bottom: 0 !important; }
   .sg-survey .sg-mobile-optimized .sg-question-options {
-    padding: 0 !important;
-  }
-}
+    padding: 0 !important; } }
+
