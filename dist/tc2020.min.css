@@ -16,6 +16,13 @@
   font-family: "ProximaNova-Light";
   src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Light.otf") format("opentype"); }
 
+@font-face {
+  font-family: "TheHand-Black";
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.1/fonts/TheHandBlack.otf") format("opentype"); }
+
+body a {
+  color: #ffffff; }
+
 .data-panel {
   height: auto !important;
   margin-top: 0; }
@@ -39,7 +46,61 @@
 .sg-progress-bar {
   display: none !important; }
 
+.tc2020-dot {
+  position: absolute;
+  background: #000000;
+  border-radius: 50%;
+  height: 3px;
+  width: 3px;
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 5s; }
+
+.tc2020-dot.tc-2020-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #000000;
+  background: transparent;
+  border-radius: 0px; }
+  .tc2020-dot.tc-2020-triangle .inner-triangle {
+    position: relative;
+    top: -20px;
+    left: 2px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent; }
+
+.tc2020-nav {
+  max-width: 960px;
+  margin: 1rem auto;
+  border-bottom: 1px solid #000000; }
+  .tc2020-nav a {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 1rem;
+    padding: 10px;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+    .tc2020-nav a:hover {
+      color: #000000; }
+    .tc2020-nav a:hover:after {
+      position: absolute;
+      height: 4px;
+      content: "";
+      background: #ffa619;
+      top: 120%;
+      width: 100%;
+      left: 0; }
+
 .tc2020-header {
+  position: relative;
   background: white;
   background: linear-gradient(180deg, white 0%, rgba(187, 187, 187, 0.802959) 50%, black 100%); }
 
@@ -86,13 +147,39 @@
   .tc2020-dave-harvey .tc2020-recap-img-title {
     max-width: 400px; }
 
+.tc2020-bonny-simi {
+  color: #ffffff;
+  height: 600px; }
+  .tc2020-bonny-simi .tc2020-recap-img-title {
+    max-width: 350px;
+    left: 0;
+    top: 0; }
+
 .tc2020-recap-img-title {
   position: absolute;
   max-width: 500px;
   top: 25%;
   left: 50%; }
 
+.tc2020-full-recap {
+  background: #000000 url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/GROUPING-OF-LINES.svg") center bottom no-repeat;
+  text-align: center;
+  min-height: 120px;
+  background-size: auto;
+  background-size: 400px 100px; }
+  .tc2020-full-recap .ctaBtn,
+  .tc2020-full-recap .ctaBtn:hover {
+    background: #1f43f5;
+    border-color: #ffffff;
+    border-radius: 0; }
+
+.tc2020-full-boni-simi {
+  color: #ffffff;
+  background: #000000 url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/Bonny-Simi-Photo.png") center center no-repeat;
+  background-size: cover; }
+
 .tc2020-recap-body {
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
   position: relative;
   z-index: 6; }
 
@@ -100,6 +187,80 @@
   background: url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/Amy-Webb-Photo.png") center left no-repeat;
   background-size: contain; }
 
+.tc2020-assistance {
+  background: #000000;
+  color: #ffffff; }
+  .tc2020-assistance .tc2020-assistance-inner {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 2.5rem 0; }
+  .tc2020-assistance .tc2020-assistance-1 {
+    font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase; }
+  .tc2020-assistance .tc2020-assistance-2 {
+    font-size: 1.5rem; }
+
+.tc2020-h2 {
+  font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.tc2020-omni {
+  background: #000000;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  .tc2020-omni img {
+    max-width: 800px; }
+
+.tc2020-travel-journey {
+  position: relative;
+  background: #000000;
+  color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.tc2020-tj-right {
+  position: absolute;
+  right: -25%;
+  max-width: 500px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.tc2020-tj-left {
+  position: absolute;
+  left: -35%;
+  max-width: 250px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.tc2020-tj {
+  position: relative;
+  max-width: 800px;
+  margin: 4rem auto; }
+
+.tc2020-tj-title img {
+  max-width: 500px; }
+
+.tc2020-tj-body {
+  max-width: 350px;
+  color: #ffffff;
+  line-height: 1.5;
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif; }
+  .tc2020-tj-body .ctaBtn,
+  .tc2020-tj-body .ctaBtn:hover {
+    background: #1f43f5;
+    border-color: #ffffff;
+    border-radius: 0; }
+
+/* =========================
+Survey Monkey
+============================ */
 .sg-question-title label {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -176,14 +337,25 @@ body .sg-question input[type="text"] {
   .postjumbotron .tcDate {
     font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    vertical-align: top; }
+  .postjumbotron .tcEarlybird {
+    margin-top: 15px; }
+  .postjumbotron .tcPrice {
+    display: inline-block;
+    font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    vertical-align: middle;
+    padding-left: 15px; }
   .postjumbotron .tcFormLabel {
     display: inline-block;
     font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    border-bottom: 1px solid #ffffff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
 
 body h1,
 body h2,
@@ -281,4 +453,7 @@ input[type="text"] {
     margin-bottom: 0 !important; }
   .sg-survey .sg-mobile-optimized .sg-question-options {
     padding: 0 !important; } }
+
+footer.travelconnect {
+  background: #000000 !important; }
 

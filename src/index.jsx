@@ -1,14 +1,64 @@
 import "./App.scss";
-import {paroller} from 'paroller.js';
 
-$(".tc-parallax-photo").paroller();
+$(document).ready(function() {
+  for (var i = 0; i < 40; i++) {
+    var height = $(".tc2020-header").height();
+    var width = $(".tc2020-header").width();
 
-$('.postjumbotron').paroller({factor: 0.35 });
+    var randX = Math.floor(Math.random() * width) + 1;
+    var randY = Math.floor(Math.random() * height) + 1;
+    var randOpacity = (Math.floor(Math.random() * 10) + 6) * 0.1;
+    var randClass = Math.floor(Math.random() * 1) + 1;
+    var className = randClass == 1 ? "tc2020-dot" : "tc2020-dot";
+    $(".tc2020-header").append(
+      "<div class='" +
+        className +
+        "' style='top:" +
+        randY +
+        "px; left:" +
+        randX +
+        "px; opacity: " +
+        randOpacity +
+        "'><div class='inner-triangle'></div></div>"
+    );
+  }
 
+  $(".tc2020-dot").each(function(index) {
+    StartInterval(index);
+  });
 
+  function StartInterval(index) {
+    var randTime = Math.floor(Math.random() * 4000) + 1000;
+    setInterval(function() {
+      myTimer(index);
+    }, randTime);
+  }
 
-$(document).ready(function(){
-  $('body .sg-question input[type="text"]').attr("placeholder", "Email Address");
-})
+  function myTimer(index) {
+    var height = $(".tc2020-header").height();
+    var width = $(".tc2020-header").width();
+
+    var randX = Math.floor(Math.random() * width) + 1;
+    var randY = Math.floor(Math.random() * height) + 1;
+    var randOpacity = (Math.floor(Math.random() * 10) + 6) * 0.1;
+    var randFilter = Math.floor(Math.random() * 1) + 1;
+
+    $(".tc2020-dot")
+      .eq(index)
+      .css("top", randY + "px");
+
+    $(".tc2020-dot")
+      .eq(index)
+      .css("left", randX + "px");
+
+    $(".tc2020-dot")
+      .eq(index)
+      .css("opacity", randOpacity);
+
+    $(".tc2020-dot")
+      .eq(index)
+      .css("filter", "blur(" + randFilter + "px)");
+  }
+});
 
 lazyload();
