@@ -45,9 +45,21 @@ body a {
   z-index: 50;
 }
 
-body .tc2020-recap a {
+body .tc2020-recap a,
+body .tc2020-full-boni-simi a {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
   color: #ffffff;
+  &:hover {
+    color: #00dfce;
+  }
+}
+
+body .tc2020-assistance a {
+  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  color: #00dfce;
+  &:hover {
+    color: #00dfce;
+  }
 }
 
 .tc2020-dot-cyan {
@@ -196,20 +208,87 @@ body .tc2020-recap a {
   left: 50%;
 }
 
+.tc2020-social {
+  background: #000000;
+  color: #ffffff;
+
+  &.tcContainer .tcSocial a.icon-social {
+    color: #ffffff;
+    &:hover {
+      color: #00dfce;
+    }
+  }
+
+  &.tcContainer .tcSocial .social-subtitle {
+    color: #ffffff;
+  }
+
+  &.tcContainer .tcSocial {
+    .hashtag,
+    .hashtag:hover {
+      font-family: "TheHand-Extra-Black", Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      letter-spacing: 7px;
+      font-size: 5rem;
+      cursor: default;
+    }
+  }
+}
+
 .tc2020-full-recap {
-  background: #000000
-    url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/GROUPING-OF-LINES.svg")
-    center bottom no-repeat;
+  background: #000000 center bottom no-repeat;
   text-align: center;
   min-height: 120px;
   background-size: auto;
   background-size: 400px 100px;
+  position: relative;
 
   .ctaBtn,
   .ctaBtn:hover {
     background: #1f43f5;
     border-color: #ffffff;
     border-radius: 0;
+    position: relative;
+    z-index: 4;
+  }
+
+  .tc2020-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 1px solid #ffffff;
+    margin-bottom: 1px solid;
+    height: 4px;
+    width: 100%;
+    z-index: 3;
+
+    &.tc2020-line2 {
+      top: 52%;
+    }
+    &.tc2020-line3 {
+      top: 56%;
+    }
+    &.tc2020-line4 {
+      top: 60%;
+    }
+    &.tc2020-line5 {
+      top: 67%;
+    }
+    &.tc2020-line6 {
+      top: 76%;
+    }
+    &.tc2020-line7 {
+      top: 86%;
+    }
+    &.tc2020-line8 {
+      top: 96%;
+    }
+    &.tc2020-line9 {
+      top: 100%;
+    }
+    &.tc2020-line10 {
+      top: 86%;
+    }
   }
 }
 
@@ -236,11 +315,22 @@ body .tc2020-recap a {
 .tc2020-assistance {
   background: #000000;
   color: #ffffff;
+  border-top: 1px solid #ffffff;
+  position: relative;
 
   .tc2020-assistance-inner {
     max-width: 1150px;
     margin: 0 auto;
-    padding: 2.5rem 0;
+    padding: 6rem 0 2.5rem 0;
+    &:before {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      content: "";
+      border-top: 1px solid #ffffff;
+      height: 1px;
+      width: 100%;
+    }
   }
   .tc2020-assistance-1 {
     font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
@@ -265,8 +355,16 @@ body .tc2020-recap a {
   background: #000000;
   padding-top: 4rem;
   padding-bottom: 4rem;
+
   img {
     max-width: 800px;
+  }
+
+  .ctaBtn,
+  .ctaBtn:hover {
+    background: #1f43f5;
+    border-color: #ffffff;
+    border-radius: 0;
   }
 }
 
@@ -309,15 +407,15 @@ body .tc2020-recap a {
 }
 
 .tc2020-resources {
-  font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+  font-family: "TheHand-Extra-Black", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 5px;
-  margin: 0;
   vertical-align: middle;
   border: 1px solid #1f43f5;
   margin-right: 15px;
   line-height: 1;
+  letter-spacing: 1px;
 
   strong {
     vertical-align: top;
