@@ -41,7 +41,21 @@ body a {
   border-radius: 50%;
   height: 3px;
   width: 3px;
-  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 5s;
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 20s;
+  z-index: 50;
+}
+
+body .tc2020-recap a {
+  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.tc2020-dot-cyan {
+  background: #00dfce;
+}
+
+.tc2020-dot-yellow {
+  background: #ffa619;
 }
 
 .tc2020-dot.tc-2020-triangle {
@@ -53,7 +67,7 @@ body a {
   border-right: 5px solid #000000;
   background: transparent;
   border-radius: 0px;
-  
+
   .inner-triangle {
     position: relative;
     top: -20px;
@@ -65,8 +79,6 @@ body a {
     border-right: 3px solid transparent;
   }
 }
-
-
 
 .tc2020-nav {
   max-width: 960px;
@@ -114,6 +126,7 @@ body a {
 .tc2020-header-image {
   max-width: 700px;
   margin: 40px auto;
+  z-index: 51;
 }
 
 .tc2020-header-date {
@@ -200,8 +213,6 @@ body a {
   }
 }
 
-
-
 .tc2020-full-boni-simi {
   color: #ffffff;
   background: #000000
@@ -251,7 +262,7 @@ body a {
 }
 
 .tc2020-omni {
-  background:#000000;
+  background: #000000;
   padding-top: 4rem;
   padding-bottom: 4rem;
   img {
@@ -295,7 +306,22 @@ body a {
   img {
     max-width: 500px;
   }
-  
+}
+
+.tc2020-resources {
+  font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 0;
+  vertical-align: middle;
+  border: 1px solid #1f43f5;
+  margin-right: 15px;
+  line-height: 1;
+
+  strong {
+    vertical-align: top;
+  }
 }
 
 .tc2020-tj-body {
@@ -314,7 +340,7 @@ body a {
 
 /* =========================
 Survey Monkey
-============================ */ 
+============================ */
 
 .sg-question-title label {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
@@ -364,7 +390,7 @@ body .sg-question input[type="text"] {
   padding: 2rem;
   color: #ffffff;
   border: none;
-  background: rgba(0, 0, 0, 0.5);
+  background: #5a5a5a;
   border-radius: 0;
   padding: 1.5rem;
 

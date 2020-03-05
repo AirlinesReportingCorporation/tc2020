@@ -52,7 +52,18 @@ body a {
   border-radius: 50%;
   height: 3px;
   width: 3px;
-  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 5s; }
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 20s;
+  z-index: 50; }
+
+body .tc2020-recap a {
+  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  color: #ffffff; }
+
+.tc2020-dot-cyan {
+  background: #00dfce; }
+
+.tc2020-dot-yellow {
+  background: #ffa619; }
 
 .tc2020-dot.tc-2020-triangle {
   position: absolute;
@@ -106,7 +117,8 @@ body a {
 
 .tc2020-header-image {
   max-width: 700px;
-  margin: 40px auto; }
+  margin: 40px auto;
+  z-index: 51; }
 
 .tc2020-header-date {
   color: #ffffff;
@@ -247,6 +259,19 @@ body a {
 .tc2020-tj-title img {
   max-width: 500px; }
 
+.tc2020-resources {
+  font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 0;
+  vertical-align: middle;
+  border: 1px solid #1f43f5;
+  margin-right: 15px;
+  line-height: 1; }
+  .tc2020-resources strong {
+    vertical-align: top; }
+
 .tc2020-tj-body {
   max-width: 350px;
   color: #ffffff;
@@ -302,7 +327,7 @@ body .sg-question input[type="text"] {
   padding: 2rem;
   color: #ffffff;
   border: none;
-  background: rgba(0, 0, 0, 0.5);
+  background: #5a5a5a;
   border-radius: 0;
   padding: 1.5rem; }
   body .sg-question input[type="text"]::placeholder {

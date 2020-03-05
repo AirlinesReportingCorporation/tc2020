@@ -1,13 +1,13 @@
 import "./App.scss";
 
 $(document).ready(function() {
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 50; i++) {
     var height = $(".tc2020-header").height();
     var width = $(".tc2020-header").width();
 
     var randX = Math.floor(Math.random() * width) + 1;
     var randY = Math.floor(Math.random() * height) + 1;
-    var randOpacity = (Math.floor(Math.random() * 10) + 6) * 0.1;
+    var randOpacity = ((Math.random()));
     var randClass = Math.floor(Math.random() * 1) + 1;
     var className = randClass == 1 ? "tc2020-dot" : "tc2020-dot";
     $(".tc2020-header").append(
@@ -28,7 +28,7 @@ $(document).ready(function() {
   });
 
   function StartInterval(index) {
-    var randTime = Math.floor(Math.random() * 4000) + 1000;
+    var randTime = Math.floor(Math.random() * 15000) + 1000;
     setInterval(function() {
       myTimer(index);
     }, randTime);
@@ -40,8 +40,8 @@ $(document).ready(function() {
 
     var randX = Math.floor(Math.random() * width) + 1;
     var randY = Math.floor(Math.random() * height) + 1;
-    var randOpacity = (Math.floor(Math.random() * 10) + 6) * 0.1;
-    var randFilter = Math.floor(Math.random() * 1) + 1;
+    var randOpacity = Math.random();
+    var randFilter = Math.random();
 
     $(".tc2020-dot")
       .eq(index)
