@@ -1,16 +1,37 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
 import "./App.scss";
 
 $(document).ready(function() {
+
+  /*
+
+  var options = {
+    damping: 0.1,
+    thumbMinSize: 20,
+    renderByPixels: true,
+    continuousScrolling: true
+  };
+  
+  var scrollbar = Scrollbar.init(document.querySelector('body'), options);
+
+  scrollbar.addListener((status) => {
+    var yOffset = scrollbar.offset.y;
+  });
+
+  */
+
   for (var i = 0; i < 50; i++) {
-    var height = $(".tc2020-header").height();
-    var width = $(".tc2020-header").width();
+    var height = $(".tc2020-header-image").height();
+    var width = $(window).width();
 
     var randX = Math.floor(Math.random() * width) + 1;
     var randY = Math.floor(Math.random() * height) + 1;
-    var randOpacity = ((Math.random()));
+    var randOpacity = Math.random();
     var randClass = Math.floor(Math.random() * 1) + 1;
     var className = randClass == 1 ? "tc2020-dot" : "tc2020-dot";
-    $(".tc2020-header").append(
+    $(".tc2020-header-image").append(
       "<div class='" +
         className +
         "' style='top:" +
@@ -35,8 +56,8 @@ $(document).ready(function() {
   }
 
   function myTimer(index) {
-    var height = $(".tc2020-header").height();
-    var width = $(".tc2020-header").width();
+    var height = $(".tc2020-header-image").height();
+    var width = $(window).width();
 
     var randX = Math.floor(Math.random() * width) + 1;
     var randY = Math.floor(Math.random() * height) + 1;
@@ -60,5 +81,3 @@ $(document).ready(function() {
       .css("filter", "blur(" + randFilter + "px)");
   }
 });
-
-lazyload();

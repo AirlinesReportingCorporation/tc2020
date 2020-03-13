@@ -16,16 +16,14 @@
 }
 
 @font-face {
-  font-family: "ProximaNova-Light";
-  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "TheHand-Black";
-  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.1/fonts/TheHandBlack.otf") format("opentype");
-}
-
-@font-face {
   font-family: "TheHand-Extra-Black";
   src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.2/fonts/TheHandExtrablack.otf") format("opentype");
+  src: url('https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.eot');
+  src: url('https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.ttf') format('truetype'),
+       url('https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.svg#the_handextrablack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }

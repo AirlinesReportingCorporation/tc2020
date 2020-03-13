@@ -13,19 +13,27 @@
   src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Regular.otf") format("opentype"); }
 
 @font-face {
-  font-family: "ProximaNova-Light";
-  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.0/fonts/ProximaNova-Light.otf") format("opentype"); }
-
-@font-face {
-  font-family: "TheHand-Black";
-  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.1/fonts/TheHandBlack.otf") format("opentype"); }
-
-@font-face {
   font-family: "TheHand-Extra-Black";
-  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.2/fonts/TheHandExtrablack.otf") format("opentype"); }
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.2/fonts/TheHandExtrablack.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.eot");
+  src: url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/tc2020@1.0.3/fonts/thehandextrablack-webfont.svg#the_handextrablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  scroll-behavior: smooth; }
 
 body a {
   color: #ffffff; }
+
+.tc2020-nav a.link-disabled {
+  cursor: default;
+  color: #bbbbbb; }
+  .tc2020-nav a.link-disabled:hover {
+    border: none;
+    color: #bbbbbb; }
+  .tc2020-nav a.link-disabled:hover:after {
+    background: transparent; }
 
 .data-panel {
   height: auto !important;
@@ -50,6 +58,14 @@ body a {
 .sg-progress-bar {
   display: none !important; }
 
+.tc2020-parallax {
+  background: #000000;
+  color: #ffffff; }
+  .tc2020-parallax .tc2020-recap-title {
+    text-align: center; }
+    .tc2020-parallax .tc2020-recap-title img {
+      max-width: 600px; }
+
 .tc2020-dot {
   position: absolute;
   background: #000000;
@@ -60,11 +76,15 @@ body a {
   z-index: 50; }
 
 body .tc2020-recap a,
-body .tc2020-full-boni-simi a {
+body .tc2020-full-boni-simi a,
+body .tc2020-recap-body-amy-webb a {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: underline; }
   body .tc2020-recap a:hover,
-  body .tc2020-full-boni-simi a:hover {
+  body .tc2020-full-boni-simi a:hover,
+  body .tc2020-recap-body-amy-webb a:hover {
     color: #00dfce; }
 
 body .tc2020-assistance a {
@@ -127,12 +147,16 @@ body .tc2020-assistance a {
 .tc2020-header {
   position: relative;
   background: white;
-  background: linear-gradient(180deg, white 0%, rgba(187, 187, 187, 0.802959) 50%, black 100%); }
+  background: linear-gradient(180deg, white 0%, whitesmoke 30%, #ebebeb 40%, #c8c8c8 60%, #bbbbbb 70%, #bbbbbb 75%, rgba(187, 187, 187, 0.8) 85%, black 100%); }
+
+.tc2020-main {
+  background: #000000; }
 
 .tc2020-header-image {
-  max-width: 700px;
+  max-width: 800px;
   margin: 40px auto;
-  z-index: 51; }
+  z-index: 51;
+  text-align: center; }
 
 .tc2020-header-date {
   color: #ffffff;
@@ -153,7 +177,7 @@ body .tc2020-assistance a {
   margin: 0 auto; }
 
 .tc2020-recap-section {
-  max-width: 750px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 2.5rem 0; }
 
@@ -166,20 +190,66 @@ body .tc2020-assistance a {
   z-index: 5; }
 
 .tc2020-amy-webb {
-  max-width: 80%; }
+  max-width: 600px;
+  background-size: contain; }
+  .tc2020-amy-webb .tc2020-recap-img-title {
+    max-width: 550px;
+    top: 40%; }
+
+.tc2020-recap-body-amy-webb.tc2020-recap-body {
+  margin-left: 200px; }
+
+.tc2020-jeff-katz {
+  max-width: 680px;
+  background-size: contain; }
+  .tc2020-jeff-katz .tc2020-recap-img-title {
+    top: 20px;
+    width: 360px;
+    left: 55%; }
+
+.tc2020-wayne-best {
+  max-width: 800px;
+  text-align: center;
+  height: 600px; }
+  .tc2020-wayne-best .tc2020-recap-img-title {
+    max-width: 380px;
+    top: 68%;
+    left: 45%; }
+
+.tc2020-recap-body-wayne-best.tc2020-recap-body {
+  max-width: 350px; }
+
+.tc2020-recap-body-jeff-katz.tc2020-recap-body {
+  margin-left: 25%;
+  max-width: 500px; }
 
 .tc2020-dave-harvey {
   max-width: 80%; }
   .tc2020-dave-harvey .tc2020-recap-img-title {
     max-width: 400px; }
 
+.tc2020-scott-kirby {
+  color: #ffffff;
+  height: 600px;
+  text-align: right; }
+  .tc2020-scott-kirby .tc2020-author {
+    width: 750px;
+    margin-right: 30px; }
+  .tc2020-scott-kirby .tc2020-recap-img-title {
+    max-width: 550px;
+    left: 40px;
+    top: 190px; }
+
 .tc2020-bonny-simi {
   color: #ffffff;
-  height: 600px; }
+  height: 800px; }
   .tc2020-bonny-simi .tc2020-recap-img-title {
     max-width: 350px;
     left: 0;
-    top: 0; }
+    top: 200px; }
+
+.tc2020-recap-section.tc2020-bonny-container {
+  padding-top: 0; }
 
 .tc2020-recap-img-title {
   position: absolute;
@@ -198,7 +268,7 @@ body .tc2020-assistance a {
     color: #ffffff; }
   .tc2020-social.tcContainer .tcSocial .hashtag,
   .tc2020-social.tcContainer .tcSocial .hashtag:hover {
-    font-family: "TheHand-Extra-Black", Arial, Helvetica, sans-serif;
+    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
     color: #ffffff;
     letter-spacing: 7px;
     font-size: 5rem;
@@ -210,7 +280,8 @@ body .tc2020-assistance a {
   min-height: 120px;
   background-size: auto;
   background-size: 400px 100px;
-  position: relative; }
+  position: relative;
+  margin: 80px 0; }
   .tc2020-full-recap .ctaBtn,
   .tc2020-full-recap .ctaBtn:hover {
     background: #1f43f5;
@@ -246,6 +317,24 @@ body .tc2020-assistance a {
     .tc2020-full-recap .tc2020-line.tc2020-line10 {
       top: 86%; }
 
+.tc2020-horizon {
+  color: #ffffff;
+  background: #000000 url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/horizon-panel-photo.png") top center no-repeat;
+  background-size: 1440px; }
+  .tc2020-horizon .tc2020-recap-body {
+    margin: 105px 0px 0 20px; }
+  .tc2020-horizon .tc2020-bonny-simi {
+    height: auto; }
+    .tc2020-horizon .tc2020-bonny-simi .tc2020-recap-img-title {
+      position: relative;
+      top: 0;
+      max-width: 100%; }
+  .tc2020-horizon .tc2020-horizon-inner {
+    width: 900px;
+    padding: 450px 0 80px 0;
+    margin: 0 auto;
+    vertical-align: top; }
+
 .tc2020-full-boni-simi {
   color: #ffffff;
   background: #000000 url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/Bonny-Simi-Photo.png") center center no-repeat;
@@ -254,11 +343,11 @@ body .tc2020-assistance a {
 .tc2020-recap-body {
   font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
   position: relative;
-  z-index: 6; }
-
-.tc2020-amy-webb {
-  background: url("https://arctravelconnect.com/globalassets/Home2/2020/homepage/Amy-Webb-Photo.png") center left no-repeat;
-  background-size: contain; }
+  z-index: 6;
+  max-width: 650px;
+  margin-left: 100px; }
+  .tc2020-recap-body p {
+    font-size: 20px !important; }
 
 .tc2020-assistance {
   background: #000000;
@@ -278,7 +367,7 @@ body .tc2020-assistance a {
       height: 1px;
       width: 100%; }
   .tc2020-assistance .tc2020-assistance-1 {
-    font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
     font-size: 5rem;
     line-height: 1;
     text-transform: uppercase; }
@@ -286,7 +375,7 @@ body .tc2020-assistance a {
     font-size: 1.5rem; }
 
 .tc2020-h2 {
-  font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+  font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
   font-size: 3rem;
   line-height: 1;
   text-transform: uppercase;
@@ -321,9 +410,9 @@ body .tc2020-assistance a {
 
 .tc2020-tj-left {
   position: absolute;
-  left: -35%;
-  max-width: 250px;
-  top: 50%;
+  left: -40%;
+  max-width: 235px;
+  top: 56%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
@@ -336,7 +425,7 @@ body .tc2020-assistance a {
   max-width: 500px; }
 
 .tc2020-resources {
-  font-family: "TheHand-Extra-Black", Arial, Helvetica, sans-serif;
+  font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 5px;
@@ -344,9 +433,13 @@ body .tc2020-assistance a {
   border: 1px solid #1f43f5;
   margin-right: 15px;
   line-height: 1;
-  letter-spacing: 1px; }
-  .tc2020-resources strong {
-    vertical-align: top; }
+  letter-spacing: 1px;
+  padding: 5px 5px 0px; }
+
+.tc2020-social.tcContainer .tcSocial .social-subtitle {
+  padding-top: 0;
+  margin-top: 0 !important;
+  margin-bottom: 50px !important; }
 
 .tc2020-tj-body {
   max-width: 350px;
@@ -399,6 +492,7 @@ Survey Monkey
   margin: 0; }
 
 body .sg-question input[type="text"] {
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   padding: 2rem;
   color: #ffffff;
@@ -444,13 +538,13 @@ body .sg-question input[type="text"] {
     margin-top: 15px; }
   .postjumbotron .tcPrice {
     display: inline-block;
-    font-family: "TheHand-Black", Arial, Helvetica, sans-serif;
+    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
     font-size: 4rem;
     vertical-align: middle;
     padding-left: 15px; }
   .postjumbotron .tcFormLabel {
     display: inline-block;
-    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     border-top: 1px solid #ffffff;
@@ -557,4 +651,22 @@ input[type="text"] {
 
 footer.travelconnect {
   background: #000000 !important; }
+  footer.travelconnect .rtf .footer-rtf-links a, footer.travelconnect .rtf .footer-rtf-links a:hover {
+    color: #00dfce !important; }
+
+/* ==============================
+
+Recap Page
+
+=============================== */
+.tc2020-recap-page .tc2020-header {
+  background: linear-gradient(180deg, white 0%, whitesmoke 30%, #ebebeb 40%, #c8c8c8 60%, #bbbbbb 65%, black 100%); }
+
+.tc2020-recap-page .tc2020-header-image img {
+  margin: 60px auto 120px auto;
+  max-width: 600px; }
+
+.tc2020-recap-page .tc2020-recap {
+  padding-top: 0;
+  padding-bottom: 0; }
 
