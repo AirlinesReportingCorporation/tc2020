@@ -2,6 +2,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap");
 
+$tc-v-teal: #1fdcc8;
+
 html {
   scroll-behavior: smooth;
 }
@@ -87,20 +89,20 @@ body .tc2020-recap-body-amy-webb a {
   font-size: 20px;
   text-decoration: underline;
   &:hover {
-    color: #00dfce;
+    color: $tc-v-teal;
   }
 }
 
 body .tc2020-assistance a {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-  color: #00dfce;
+  color: $tc-v-teal;
   &:hover {
-    color: #00dfce;
+    color: $tc-v-teal;
   }
 }
 
 .tc2020-dot-cyan {
-  background: #00dfce;
+  background: $tc-v-teal;
 }
 
 .tc2020-dot-yellow {
@@ -313,7 +315,7 @@ body .tc2020-assistance a {
   &.tcContainer .tcSocial a.icon-social {
     color: #ffffff;
     &:hover {
-      color: #00dfce;
+      color: $tc-v-teal;
     }
   }
 
@@ -838,7 +840,7 @@ footer.travelconnect {
   background: #000000 !important;
   .rtf .footer-rtf-links a,
   .rtf .footer-rtf-links a:hover {
-    color: #00dfce !important;
+    color: $tc-v-teal !important;
   }
 }
 
@@ -940,7 +942,7 @@ Recap Page
   }
 }
 
-$tc-v-teal: #1fdcc8;
+
 
 .tc2020-main-v {
   .tc2020-header {

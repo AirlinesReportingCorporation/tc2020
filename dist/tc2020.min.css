@@ -88,16 +88,16 @@ body .tc2020-recap-body-amy-webb a {
   body .tc2020-recap a:hover,
   body .tc2020-full-boni-simi a:hover,
   body .tc2020-recap-body-amy-webb a:hover {
-    color: #00dfce; }
+    color: #1fdcc8; }
 
 body .tc2020-assistance a {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-  color: #00dfce; }
+  color: #1fdcc8; }
   body .tc2020-assistance a:hover {
-    color: #00dfce; }
+    color: #1fdcc8; }
 
 .tc2020-dot-cyan {
-  background: #00dfce; }
+  background: #1fdcc8; }
 
 .tc2020-dot-yellow {
   background: #ffa619; }
@@ -268,7 +268,7 @@ body .tc2020-assistance a {
   .tc2020-social.tcContainer .tcSocial a.icon-social {
     color: #ffffff; }
     .tc2020-social.tcContainer .tcSocial a.icon-social:hover {
-      color: #00dfce; }
+      color: #1fdcc8; }
   .tc2020-social.tcContainer .tcSocial .social-subtitle {
     color: #ffffff; }
   .tc2020-social.tcContainer .tcSocial .hashtag,
@@ -660,7 +660,7 @@ footer.travelconnect {
   background: #000000 !important; }
   footer.travelconnect .rtf .footer-rtf-links a,
   footer.travelconnect .rtf .footer-rtf-links a:hover {
-    color: #00dfce !important; }
+    color: #1fdcc8 !important; }
 
 /* ==============================
 
