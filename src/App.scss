@@ -6,11 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-}
-
 body a {
   color: #ffffff;
+}
+
+.tc2020-nav a.arc-logo:hover:after {
+  display: none;
 }
 
 .tc2020-nav a.link-disabled {
@@ -163,17 +164,6 @@ body .tc2020-assistance a {
 .tc2020-header {
   position: relative;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(245, 245, 245, 1) 30%,
-    rgba(235, 235, 235, 1) 40%,
-    rgba(200, 200, 200, 1) 60%,
-    rgba(187, 187, 187, 1) 70%,
-    rgba(187, 187, 187, 1) 75%,
-    rgba(187, 187, 187, 0.8) 85%,
-    rgba(0, 0, 0, 1) 100%
-  );
 }
 
 .tc2020-main {
@@ -194,7 +184,7 @@ body .tc2020-assistance a {
   font-size: 42px;
   text-transform: uppercase;
   letter-spacing: 10px;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .tc2020-recap {
@@ -212,6 +202,7 @@ body .tc2020-assistance a {
   max-width: 960px;
   margin: 0 auto;
   padding: 2.5rem 0;
+  position: relative;
 }
 
 .tc2020-recap-image-top {
@@ -225,15 +216,17 @@ body .tc2020-assistance a {
 }
 
 .tc2020-amy-webb {
+  position: relative;
   max-width: 600px;
   background-size: contain;
   .tc2020-recap-img-title {
+    width: 100%;
     max-width: 550px;
-    top: 40%;
+    top: 180px;
   }
 }
 
-.tc2020-recap-body-amy-webb.tc2020-recap-body  {
+.tc2020-recap-body-amy-webb.tc2020-recap-body {
   margin-left: 200px;
 }
 
@@ -259,15 +252,13 @@ body .tc2020-assistance a {
   }
 }
 
-.tc2020-recap-body-wayne-best.tc2020-recap-body  {
+.tc2020-recap-body-wayne-best.tc2020-recap-body {
   max-width: 350px;
 }
 
 .tc2020-recap-body-jeff-katz.tc2020-recap-body {
   margin-left: 25%;
   max-width: 500px;
-
-  
 }
 
 .tc2020-dave-harvey {
@@ -333,7 +324,8 @@ body .tc2020-assistance a {
   &.tcContainer .tcSocial {
     .hashtag,
     .hashtag:hover {
-      font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
+      font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
+        sans-serif;
       color: #ffffff;
       letter-spacing: 7px;
       font-size: 5rem;
@@ -414,7 +406,7 @@ body .tc2020-assistance a {
     .tc2020-recap-img-title {
       position: relative;
       top: 0;
-      max-width:100%;
+      max-width: 100%;
     }
   }
   .tc2020-horizon-inner {
@@ -465,7 +457,8 @@ body .tc2020-assistance a {
     }
   }
   .tc2020-assistance-1 {
-    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
+    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
+      sans-serif;
     font-size: 5rem;
     line-height: 1;
     text-transform: uppercase;
@@ -476,7 +469,8 @@ body .tc2020-assistance a {
 }
 
 .tc2020-h2 {
-  font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
+  font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
+    sans-serif;
   font-size: 3rem;
   line-height: 1;
   text-transform: uppercase;
@@ -539,7 +533,8 @@ body .tc2020-assistance a {
 }
 
 .tc2020-resources {
-  font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
+  font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
+    sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 5px;
@@ -671,9 +666,11 @@ body .sg-question input[type="text"] {
   }
 
   .tcDate {
-    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    max-width: 960px;
+    margin: 0 auto 100px auto;
     vertical-align: top;
   }
 
@@ -683,7 +680,8 @@ body .sg-question input[type="text"] {
 
   .tcPrice {
     display: inline-block;
-    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica, sans-serif;
+    font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
+      sans-serif;
     font-size: 4rem;
     vertical-align: middle;
     padding-left: 15px;
@@ -838,7 +836,8 @@ body h6,
 
 footer.travelconnect {
   background: #000000 !important;
-  .rtf .footer-rtf-links a, .rtf .footer-rtf-links a:hover {
+  .rtf .footer-rtf-links a,
+  .rtf .footer-rtf-links a:hover {
     color: #00dfce !important;
   }
 }
@@ -868,5 +867,240 @@ Recap Page
   .tc2020-recap {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tc2020-author {
+    display: none;
+  }
+
+  .tc2020-recap-image-top {
+    height: auto !important;
+  }
+
+  .tc2020-recap-img-title {
+    position: relative !important;
+    top: auto !important;
+    left: 0 !important;
+    text-align: center;
+    display: block !important;
+    margin: 0 auto;
+    height: auto !important;
+  }
+
+  .tc2020-recap-body {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-top: 40px;
+  }
+
+  .tc2020-full-boni-simi {
+    background: #000000;
+
+    .tc2020-recap-body {
+      padding: 40px;
+      p {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .tc2020-tj-right,
+  .tc2020-tj-left {
+    display: none;
+  }
+
+  .tc2020-tj-body {
+    max-width: 100% !important;
+  }
+
+  .tcDate {
+    font-size: 1rem !important;
+    color: #ffffff;
+  }
+
+  .tc2020-header-date {
+    font-size: 30px !important;
+  }
+
+  .tc2020-resources {
+    border: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .tc2020-horizon {
+    background: #000000;
+  }
+
+  .tc2020-horizon-inner {
+    width: 100% !important;
+    padding: 40px !important;
+  }
+}
+
+$tc-v-teal: #1fdcc8;
+
+.tc2020-main-v {
+  .tc2020-header {
+    background: radial-gradient(closest-side, #333333, #1a1a1a, #000000);
+  }
+
+  .tc2020-dot {
+    background: $tc-v-teal;
+    height: 4px;
+    width: 4px;
+  }
+
+  .tc2020-nav {
+    max-width: 1170px;
+    border-color: #ffffff;
+
+    a {
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .tc2020-header-image {
+    padding: 8rem 0;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+
+  .tc2020-virtual {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .tc2020-virtual-inner {
+    padding: 0 40px;
+
+    img {
+      border-top: $tc-v-teal 1px solid;
+      border-bottom: $tc-v-teal 1px solid;
+      padding: 20px 0;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 20px !important;
+      margin-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .tc2020-kickoff {
+    max-width: 1170px;
+    margin: 300px auto 150px;
+    color: #ffffff;
+  }
+
+  .tc2020-kickoff-container {
+    position: relative;
+    background: #202020;
+    padding: 100px 80px 60px;
+  }
+
+  .kickoff-top {
+    position: absolute;
+    top: -220px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+    .series-kickoff {
+      width: 300px;
+      margin: 0 auto;
+      padding-left: 15px;
+    }
+  }
+
+  .tc2020-kickoff-details {
+    padding-right: 60px;
+
+    .kickoff-time,
+    .kickoff-date {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      border-bottom: 2px solid #000000;
+      padding: 30px 0;
+    }
+
+    img {
+      max-width: 50px;
+      margin-right: 30px;
+    }
+
+    img.kickoff-logo {
+      max-width: 40%;
+      padding: 30px 0;
+      margin-right: 20px;
+    }
+  }
+
+  .tc2020-kickoff-description {
+    padding-left: 60px;
+    border-left: 1px solid #ffffff;
+
+    .kickoff-sub {
+      font-family: SourceSansPro-Light, Arial, Helvetica, sans-serif;
+      font-size: 2.2rem;
+    }
+    .kickoff-title {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 2.7rem;
+      line-height: 1.2;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 20px !important;
+    }
+    .ctaBtn, .ctaBtn:hover {
+      background: rgb(253, 157, 38);
+      border-radius: 0;
+      border-color: #ffffff;
+      margin: 2px;
+      padding-left: 0;
+      padding-right: 0;
+      border-width: 1px;
+      margin-top: 20px; 
+      span {
+        border: 4px solid #202020;
+        min-height: 3.3125rem;
+        padding: .75rem 1.875rem;
+      }
+    }
+  }
+
+
+  .tc2020-virtual-info {
+    color: #ffffff;
+    .tc2020-sharing {
+      text-align: center;
+      font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
+        sans-serif;
+        font-size: 3.25rem;
+    }
+    .tc2020-questions {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1170px;
+      padding: 45px 30px;
+      border-top: 1px solid $tc-v-teal;
+      border-bottom: 1px solid $tc-v-teal;
+      font-size: 1.75rem;
+      text-align: center;
+      margin: 60px auto;
+
+      a, a:hover, a:focus {
+        color: $tc-v-teal;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
