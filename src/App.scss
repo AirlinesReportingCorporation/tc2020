@@ -942,11 +942,10 @@ Recap Page
   }
 }
 
-
-
 .tc2020-main-v {
   .tc2020-header {
-    background: radial-gradient(closest-side, #333333, #1a1a1a, #000000);
+    background: #000000;
+    //background: radial-gradient(closest-side, #333333, #1a1a1a, #000000);
   }
 
   .tc2020-dot {
@@ -968,9 +967,9 @@ Recap Page
   }
 
   .tc2020-header-image {
-    padding: 8rem 0;
+    padding: 0;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1600px;
   }
 
   .tc2020-virtual {
@@ -985,6 +984,9 @@ Recap Page
       border-top: $tc-v-teal 1px solid;
       border-bottom: $tc-v-teal 1px solid;
       padding: 20px 0;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto;
     }
 
     p {
@@ -1061,7 +1063,8 @@ Recap Page
       margin-top: 20px;
       font-size: 20px !important;
     }
-    .ctaBtn, .ctaBtn:hover {
+    .ctaBtn,
+    .ctaBtn:hover {
       background: rgb(253, 157, 38);
       border-radius: 0;
       border-color: #ffffff;
@@ -1069,15 +1072,14 @@ Recap Page
       padding-left: 0;
       padding-right: 0;
       border-width: 1px;
-      margin-top: 20px; 
+      margin-top: 20px;
       span {
         border: 4px solid #202020;
         min-height: 3.3125rem;
-        padding: .75rem 1.875rem;
+        padding: 0.75rem 1.875rem;
       }
     }
   }
-
 
   .tc2020-virtual-info {
     color: #ffffff;
@@ -1085,7 +1087,7 @@ Recap Page
       text-align: center;
       font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
         sans-serif;
-        font-size: 3.25rem;
+      font-size: 3.25rem;
     }
     .tc2020-questions {
       font-family: Arial, Helvetica, sans-serif;
@@ -1097,12 +1099,34 @@ Recap Page
       text-align: center;
       margin: 60px auto;
 
-      a, a:hover, a:focus {
+      a,
+      a:hover,
+      a:focus {
         color: $tc-v-teal;
       }
       a:hover {
         text-decoration: underline;
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tc2020-main-v {
+    .tc2020-kickoff-description {
+      padding-left: 10px;
+      border-left: none;
+    }
+
+    .tc2020-kickoff-container .tc2020-kickoff-description .ctaBtn {
+      span {
+        border: none;
+      }
+    }
+
+    .tc2020-sharing {
+      padding: 1rem;
+    }
+    
   }
 }
