@@ -574,12 +574,12 @@ class App extends Component {
                       <div className="col-md-4">
                         <div className="tc2020-assistance-2">
                           <div className="tc2020-h2">General Inquiries</div>
-                          <strong>Carla Cobos-Hull</strong>
+                          <strong>Kerri Mills</strong>
                           <br />
-                          (703) 816-8521
+                          (703) 816-8583
                           <br />
                           <a href="mailto:ccoboshull@arccorp.com">
-                            ccoboshull@arccorp.com
+                            kmills@arccorp.com
                           </a>
                         </div>
                       </div>
